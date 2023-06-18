@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  snort:
+    image: snort-training-demo:latest
+    build: .
+    volumes:
+      - ${TRAINING_RESOURCES}:/opt/training-resources
