@@ -1,6 +1,10 @@
 # Snort Training Demo
 This repo is designed to provide a quick training resource with snort
 
+## Prerequisite
+1. Docker
+2. Docker-compose
+
 ## Install
 Clone the code from the repo
 ```sh
@@ -26,6 +30,11 @@ docker-compose exec snort /bin/bash
 Training resources will be able to be dropped into folder that is specified in the `.env` (./demo-pcap-files by default) on your local machine, and will be available in `/opt/training-resources` to run command against.
 ```sh
 ls /opt/training-resources
+```
+
+You can then use snort on any of the files in the attached volume
+```sh
+snort <pcap-file placed in the local dir>
 ```
 
 ### Helpful Commands
