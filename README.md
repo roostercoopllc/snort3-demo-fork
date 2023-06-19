@@ -34,7 +34,8 @@ ls /opt/training-resources
 
 You can then use snort on any of the files in the attached volume
 ```sh
-snort <pcap-file placed in the local dir>
+# if placed in the local directory that is mounted in the container
+snort /opt/training-resources/<pcap-file placed in the local dir>
 ```
 
 ### Helpful Commands
